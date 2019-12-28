@@ -1,0 +1,54 @@
+@import 'reset.css';
+body{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#paintCanvas{
+    margin-top:10px;
+    width:500px;
+    height: 550px;;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+#range{
+    margin-top:5px;
+    cursor: pointer;
+}
+#menuButtons{
+    margin-top:10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+#menuButtons button{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border:2px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    outline: 0;
+    text-transform: uppercase;
+}
+#menuButtons button:active,
+.controlColors:active{
+    transform: scale(0.97);
+}
+#controlColors{ 
+    display: flex;
+    justify-content: space-around;
+    width:500px;
+}
+#controlColors .controlColors{
+    width:50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
